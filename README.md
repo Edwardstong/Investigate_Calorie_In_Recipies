@@ -132,3 +132,38 @@ This finding suggests that **newer or older recipes might have systematically di
   height="600"
   frameborder="0"
 ></iframe>
+
+
+### **Missingness Permutation Test of description column on n_steps column**  
+
+The permutation test was conducted to determine whether the missingness of the **"description"** column in the dataset is **dependent on the "n_steps"** column.  
+
+#### **Null Hypothesis (H₀)**  
+The missingness of the **"description"** column is **independent** of the number of steps (**n_steps**), meaning missing values occur randomly concerning the complexity of a recipe.  
+
+#### **Alternative Hypothesis (H₁)**  
+The missingness of the **"description"** column **depends** on the number of steps (**n_steps**), indicating that recipes with fewer or more steps might be more likely to have missing descriptions.  
+
+#### **Results of the Permutation Test**  
+- The **p-value** from the test is calculated as the proportion of test statistics (from the randomized permutations) that are **greater than or equal** to the observed absolute difference in **n_steps** for missing vs. non-missing descriptions.  
+- The result of **p > 0.05** suggests that we **fail to reject the null hypothesis** at a **5% significance level**.  
+
+#### **Interpretation**  
+Since the **p-value is greater than 0.05**, we **do not have statistical evidence** to suggest that the missingness of the **"description"** column depends on the **number of steps (n_steps)** in a recipe. This indicates that the missingness of the **"description"** column is **Missing Completely at Random (MCAR)** with respect to **n_steps**.  
+
+This finding suggests that the complexity of a recipe (as measured by **n_steps**) **does not influence whether a description is missing**. Further investigation into other variables, such as contributor behavior or recipe submission time, may provide better insight into the missingness pattern.  
+
+####  Plotly plots
+<iframe
+  src="assets/plot3.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src="assets/plot4.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
