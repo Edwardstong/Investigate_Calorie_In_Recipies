@@ -81,3 +81,15 @@ This scatter plot visualizes the relationship between Total Fat, Total Sugar, an
   height="600"
   frameborder="0"
 ></iframe>
+
+### Mean calories for each year.
+| submitted_year | 2008   | 2009   | 2010   | 2011   | 2012   | 2013   | 2014   | 2015   | 2016   | 2017   | 2018   |
+|---------------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|--------|
+| **calories**  | 418.85 | 427.92 | 416.97 | 454.81 | 425.33 | 456.58 | 478.59 | 452.44 | 538.80 | 743.52 | 979.43 |
+**Explanation of the Table**  
+The table presents the average calorie content of recipes submitted each year from 2008 to 2018. Each column represents a year, while the corresponding values indicate the **average calories per recipe** submitted in that year.  
+From 2008 to 2015, the average calorie content fluctuates between **~418 to ~478 calories**, showing **moderate variation** in recipe calorie levels. In 2016, a noticeable increase to **538.8 calories** occurs. The most significant jumps appear in **2017 (743.52 calories)** and **2018 (979.43 calories)**, indicating a rapid rise in high-calorie recipe submissions.  
+
+**Significance of the Table**  
+The data suggests that recipes have been gradually increasing in calorie content, with a sharp rise after 2015. This could indicate a **shift towards richer, more indulgent recipes** in recent years. Understanding calorie trends helps analyze **whether people are favoring higher-calorie recipes over time**, which could reflect changes in cooking habits, food preferences, or even societal dietary trends. If the trend continues, it may have implications for **public health, dietary recommendations, and consumer food choices**.
+
