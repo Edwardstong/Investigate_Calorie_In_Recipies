@@ -1,5 +1,5 @@
 # InvestigateCaloriesInRecipies
-This is a project for DSC 80 at UCSD. changedjio
+This is a project for DSC 80 at UCSD.
 
 ## Introduction
 We have access to two main DataFrames, recipes (83,782 rows × 12 columns) and 
@@ -14,13 +14,13 @@ home cooks, nutritionists, and food enthusiasts looking to make informed choices
 about meal planning, whether aiming for indulgence or balanced nutrition.
 Our analysis will focus on key columns such as:
 
--**nutrition: A list containing calories, total fat, sugar, sodium, protein, saturated fat, and carbohydrates, with percentages of the daily recommended value (PDV)**
+- **nutrition: A list containing calories, total fat, sugar, sodium, protein, saturated fat, and carbohydrates, with percentages of the daily recommended value (PDV)**
 
--**n_steps: Number of steps in recipe**
+- **n_steps: Number of steps in recipe**
 
--**n_ingredients: Number of ingredients in recipe**
+- **n_ingredients: Number of ingredients in recipe**
 
--**rating: The rating given to the recipe**
+- **rating: The rating given to the recipe**
 
 ## Data Cleaning and Exploratory Data Analysis
 ### Data Cleaning Process
