@@ -39,3 +39,10 @@ To further enhance our understanding of recipe popularity, the average rating pe
 Lastly, I addressed the nutrition column, which contained values stored as strings that resembled lists. Since this format prevented direct numerical analysis, I converted the string into an actual list and extracted each nutrient into separate columns (calories, total fat, sugar, sodium, protein, saturated fat, and carbohydrates). This allowed for easier feature selection, filtering, and numerical computations in later analysis.
 
 These steps improved the usability of the dataset, eliminated inconsistencies, and provided structured, numerical data for more accurate and insightful analysis.
+
+<iframe
+  src="assets/file-name.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
