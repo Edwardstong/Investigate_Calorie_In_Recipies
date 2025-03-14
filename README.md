@@ -1,7 +1,7 @@
 # InvestigateCaloriesInRecipies
 This is a project for DSC 80 at UCSD. changedjio
 
-## H2 Introduction
+## Introduction
 We have access to two main DataFrames, recipes (83,782 rows × 12 columns) and 
 interactions (731,927 rows × 5 columns), from Food.com, containing information 
 on thousands of recipes and their nutritional content. This dataset allows us to
@@ -22,7 +22,9 @@ Our analysis will focus on key columns such as:
 
 -**rating: The rating given to the recipe**
 
-By exploring these features, we aim to uncover what defines high-calorie recipes and how they differ from lower-calorie alternatives.
-Highly rated recipes (those with a average rating >=4.0) tends to have more calories than their counterparts with average rating <4.0
-
-Whether a recipe is highly rated or not (if it has an average rating >=4.0) does not affect the calories of the recipe.</p>
+## Data Cleaning and Exploratory Data Analysis
+### Data Cleaning Process
+1. Left merge the recipes and interactions datasets together.
+2.In the merged dataset, fill all ratings of 0 with np.nan
+3.Find the average rating per recipe, as a Series.
+4.Add this Series containing the average rating per recipe back to the recipes dataset
