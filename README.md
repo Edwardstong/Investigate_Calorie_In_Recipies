@@ -61,3 +61,15 @@ These steps improved the usability of the dataset, eliminated inconsistencies, a
   height="600"
   frameborder="0"
 ></iframe>
+
+The histogram displays the distribution of calories in various recipes, showing a right-skewed distribution. Most recipes have a calorie count between 0 and 400, with the highest concentration around 150-250 calories. 
+
+###  Plotly plot of the relationship between total fat/carbohydrates/total sugar and calories
+<iframe
+  src="assets/figure_28.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+The histogram displays the distribution of calories in various recipes, showing a right-skewed distribution. Most recipes have a calorie count between 0 and 400, with the highest concentration around 150-250 calories. 
