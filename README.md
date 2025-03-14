@@ -155,14 +155,14 @@ This finding suggests that the complexity of a recipe (as measured by **n_steps*
 
 ####  Plotly plots
 <iframe
-  src="assets/plot3.html"
+  src="assets/plot5.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
 
 <iframe
-  src="assets/plot4.html"
+  src="assets/plot6.html"
   width="800"
   height="600"
   frameborder="0"
