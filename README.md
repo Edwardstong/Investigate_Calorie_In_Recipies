@@ -13,7 +13,8 @@ attributes contribute to their nutritional density. This insight is valuable for
 home cooks, nutritionists, and food enthusiasts looking to make informed choices
 about meal planning, whether aiming for indulgence or balanced nutrition.
 Our analysis will focus on key columns such as:
-nutrition: A list containing calories, total fat, sugar, sodium, protein, saturated fat, and carbohydrates, with percentages of the daily recommended value (PDV)
+
+-**nutrition: A list containing calories, total fat, sugar, sodium, protein, saturated fat, and carbohydrates, with percentages of the daily recommended value (PDV)**
 
 -**n_steps: Number of steps in recipe**
 
