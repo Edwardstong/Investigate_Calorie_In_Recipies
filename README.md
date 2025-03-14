@@ -83,7 +83,7 @@ This scatter plot visualizes the relationship between Total Fat, Total Sugar, an
 ></iframe>
 
 ### Mean calories for each year.
-**Mean calories for each year.**
+**Table: Mean calories for each year.**
 
 | submitted_year | 2008  | 2009  | 2010  | 2011  | 2012  | 2013  | 2014  | 2015  | 2016  | 2017  | 2018  |
 |---------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
@@ -96,3 +96,39 @@ From 2008 to 2015, the average calorie content fluctuates between **~418 to ~478
 **Significance of the Table**  
 The data suggests that recipes have been gradually increasing in calorie content, with a sharp rise after 2015. This could indicate a **shift towards richer, more indulgent recipes** in recent years. Understanding calorie trends helps analyze **whether people are favoring higher-calorie recipes over time**, which could reflect changes in cooking habits, food preferences, or even societal dietary trends. If the trend continues, it may have implications for **public health, dietary recommendations, and consumer food choices**.
 
+## Assessment of Missingness
+I believe the **"description"** column in the dataset could be Not Missing at Random (NMAR). The likelihood of missingness in this column may be related to the nature of the recipes themselves. For example, contributors might intentionally leave the description blank for well-known recipes, assuming users already understand them. Since NMAR missingness depends on the unobserved values of the missing data itself, it is difficult to correct using standard missing data techniques. However, to determine if the missingness could instead be **Missing at Random (MAR)**, I would need additional data, such as Recipe popularity. (If lower-rated recipes tend to have missing descriptions, it may suggest that users are less engaged with them, shifting the missingness toward MAR.)
+
+### **Missingness Permutation Test of description column on submitted column**
+
+The permutation test was conducted to determine whether the missingness of the **"description"** column in the dataset is **dependent on the "submitted" date**. 
+
+#### **Null Hypothesis (H₀)**
+The missingness of the **"description"** column is **independent** of the submission date, meaning missing values occur randomly concerning when a recipe was submitted.
+
+#### **Alternative Hypothesis (H₁)**
+The missingness of the **"description"** column **depends on the submission date**, indicating that certain time periods have a higher likelihood of missing values.
+
+#### **Results of the Permutation Test**
+- The **p-value** from the test is calculated as the proportion of test statistics (from the randomized permutations) that are **greater than or equal** to the observed absolute difference in submission dates for missing vs. non-missing descriptions.
+- The result of `p < 0.05` suggests that we **reject the null hypothesis** at a **5% significance level**.
+
+#### **Interpretation**
+Since the p-value is less than 0.05, we have **statistical evidence** that the missingness of the **"description"** column is **not missing completely at random (MCAR)**. Instead, it is likely related to the **submission date**, which means the missingness could be **Missing at Random (MAR) or Not Missing at Random (NMAR)**.
+
+This finding suggests that **newer or older recipes might have systematically different levels of missing descriptions**. Further investigation into submission trends, contributor behavior, or platform policy changes over time could help clarify why descriptions are more frequently missing for certain submission periods.
+
+####  Plotly plots
+<iframe
+  src="assets/plot1.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<iframe
+  src="assets/plot2.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
