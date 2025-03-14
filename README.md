@@ -72,4 +72,12 @@ The histogram displays the distribution of calories in various recipes, showing 
   frameborder="0"
 ></iframe>
 
-The histogram displays the distribution of calories in various recipes, showing a right-skewed distribution. Most recipes have a calorie count between 0 and 400, with the highest concentration around 150-250 calories. 
+This scatter plot visualizes the relationship between Total Fat, Total Sugar, and Carbohydrates with Calories. The positive trend observed suggests that as the nutrient values increase, the calorie content also increases. Notably, Total Sugar (orange) and Carbohydrates (green) exhibit a sharp upward correlation, while many data points of of the total fat category lies in the bottom layer of the plot. **Below is a Plot that only shows the relationship between total fat and calories for clearer depiction.**
+
+###  Plotly plot of the relationship between total fat and calories
+<iframe
+  src="assets/figure_27.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
