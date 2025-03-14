@@ -41,6 +41,9 @@ Lastly, I addressed the nutrition column, which contained values stored as strin
 These steps improved the usability of the dataset, eliminated inconsistencies, and provided structured, numerical data for more accurate and insightful analysis.
 
 **Head of the cleaned DataFrame**
+
+**Note:** [...] was used to shorten long values for tags, steps, and description.
+
 | Name                                   | ID       | Minutes | Contributor ID | Submitted  | Tags  | Nutrition                                    | N Steps | Steps | Description                                 | Avg Rating Per Recipe | Calories | Total Fat | Total Sugar | Total Sodium | Total Protein | Saturated Fat | Carbohydrates | Description Missingness | If Highly Rated |
 |----------------------------------------|----------|---------|---------------|------------|-------|---------------------------------------------|---------|-------|--------------------------------------------|-----------------------|----------|-----------|-------------|--------------|--------------|--------------|--------------|------------------------|----------------|
 | 1 brownies in the world best ever     | 333281   | 40      | 985201        | 2008-10-27 | [...] | [138.4, 10.0, 50.0, 3.0, 3.0, 19.0, 6.0]    | 10      | [...] | these are the most; chocolatey, moist,... | 4.0                   | 138.4    | 10.0      | 50.0        | 3.0          | 3.0          | 19.0         | 6.0          | Not Missing             | True           |
