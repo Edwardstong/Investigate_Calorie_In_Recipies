@@ -118,16 +118,9 @@ Since the p-value is less than 0.05, we have **statistical evidence** that the m
 
 This finding suggests that **newer or older recipes might have systematically different levels of missing descriptions**. Further investigation into submission trends, contributor behavior, or platform policy changes over time could help clarify why descriptions are more frequently missing for certain submission periods.
 
-####  Plotly plots
+### **The empirical distribution of the test statistic used in the permutation test testing the association of missing description and submitted date, along with the observed statistic.**  
 <iframe
-  src="assets/plot1.html"
-  width="800"
-  height="600"
-  frameborder="0"
-></iframe>
-
-<iframe
-  src="assets/plot2.html"
+  src="assets/plot7.html"
   width="800"
   height="600"
   frameborder="0"
@@ -167,3 +160,4 @@ This finding suggests that the complexity of a recipe (as measured by **n_steps*
   height="600"
   frameborder="0"
 ></iframe>
+
