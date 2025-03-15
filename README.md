@@ -1,4 +1,4 @@
-# InvestigateCaloriesInRecipies
+# InvestigateCaloriesInRecipes
 This is a project for DSC 80 at UCSD.
 
 ## Introduction
@@ -187,7 +187,7 @@ Since the **p-value is below our significance threshold (0.05)**, we **reject th
 However, this result **does not prove causation** we cannot definitively say that higher calorie content causes a recipe to be rated more highly. There may be other factors influencing both **recipe ratings** and **caloric content**, such as taste preferences or the types of recipes that tend to receive more reviews.  
 
 
-##  Framing a Prediction Problem
+## Framing a Prediction Problem
 **Prediction problem: what is the amount of calories in a given recipe.** The prediction of the **calories** column is based on various attributes such as ingredients, preparation time, number of steps, and nutritional components. Since the target variable, **calories**, is a **continuous variable**, this is a **regression problem**, and I have chosen **linear regression**. I selected **R²** as the evaluation metric because it measures how well the independent variables explain the variability in calorie content. Unlike error-based metrics such as **RMSE (Root Mean Squared Error)**, R² provides an intuitive measure of model performance by indicating the proportion of variance explained. A high R² value suggests that our features significantly contribute to predicting calorie content, whereas a low R² would indicate that additional features or more complex models may be needed.
 
 
