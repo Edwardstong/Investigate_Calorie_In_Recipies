@@ -6,7 +6,7 @@ We have access to two main DataFrames, recipes (83,782 rows × 12 columns) and
 interactions (731,927 rows × 5 columns), from Food.com, containing information 
 on thousands of recipes and their nutritional content. This dataset allows us to
 explore what contributes to higher-calorie recipes. Specifically, we seek to 
-answer: How can we determine the amount of calories?
+answer: What types of recipes tend to have the most calories?
 By analyzing factors such as preparation time, number of steps, and ingredient 
 composition, we can identify trends in high-calorie recipes and understand which
 attributes contribute to their nutritional density. This insight is valuable for
@@ -161,3 +161,27 @@ This finding suggests that the complexity of a recipe (as measured by **n_steps*
   frameborder="0"
 ></iframe>
 
+
+## **Hypothesis Testing: The Relationship Between Recipe Ratings and Calories**
+
+### **Null Hypothesis (H₀)**  
+The **caloric content** of a recipe is **independent** of whether the recipe is **highly rated** (average rating ≥ 4.0). In other words, highly rated recipes do not tend to have significantly different calorie levels compared to lower-rated recipes.
+
+### **Alternative Hypothesis (H₁)**  
+Recipes that are **highly rated** (average rating ≥ 4.0) tend to have **higher calorie content** compared to their lower-rated counterparts (average rating < 4.0).
+
+### **Test Statistic and Significance Level**
+The test statistic used in this permutation test is the **difference in mean calorie content** between **highly rated recipes** and **lower-rated recipes**.  
+
+- This choice is appropriate because it allows us to measure whether there is a significant difference in calories between the two groups.  
+- We set our **significance level (α) at 0.05 (5%)**, which is a common threshold in statistical hypothesis testing.
+
+### **Permutation Test and p-value**  
+- The test generates a **null distribution** by randomly shuffling the `"if_highly_rated"` labels across recipes 1,000 times and recalculating the test statistic each time.  
+- The **p-value** is calculated as the proportion of test statistics from the permutations that are **less than or equal to the observed difference** in mean calories.  
+- The resulting **p-value is less than 0.05** (p < 0.05), which means that the observed difference is unlikely to have occurred by random chance under the null hypothesis.
+
+### **Conclusion**  
+Since the **p-value is below our significance threshold (0.05)**, we **reject the null hypothesis** in favor of the alternative hypothesis. This suggests that **highly rated recipes tend to have more calories than lower-rated recipes**.  
+
+However, this result **does not prove causation** we cannot definitively say that higher calorie content causes a recipe to be rated more highly. There may be other factors influencing both **recipe ratings** and **caloric content**, such as taste preferences or the types of recipes that tend to receive more reviews.  
