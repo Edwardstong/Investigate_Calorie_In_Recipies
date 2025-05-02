@@ -1,6 +1,4 @@
 # InvestigateCaloriesInRecipes
-This is a project for DSC 80 at UCSD.
-
 ## Introduction
 We have access to two main DataFrames, recipes (83,782 rows × 12 columns) and 
 interactions (731,927 rows × 5 columns), from Food.com, containing information 
